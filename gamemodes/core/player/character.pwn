@@ -528,10 +528,11 @@ public OnCharacterRetrieve(playerid, slotid) {
 
     GivePlayerMoney(playerid, data[E_CHARACTER_MONEY]);
     SetPlayerScore(playerid, data[E_CHARACTER_SCORE]);
-    SetPlayerSkin(playerid, data[E_CHARACTER_SKIN_ID]);
     SetPlayerVirtualWorld(playerid, data[E_CHARACTER_WORLD_ID]);
     SetPlayerInterior(playerid, data[E_CHARACTER_INTERIOR_ID]);
     SetPlayerWantedLevel(playerid, data[E_CHARACTER_WANTED]);
+    SetPlayerHealth(playerid, data[E_CHARACTER_HEALTH]);
+    SetPlayerArmour(playerid, data[E_CHARACTER_ARMOUR]);
 
     SetCharacterSpawn(
         playerid,
